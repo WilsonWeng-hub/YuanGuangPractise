@@ -46,7 +46,7 @@ public class AccountController {
         httpServletResponse.setHeader("Access-control-Expose-Headers","Authorization");
         return Result.succ(MapUtil.builder()
                 .put("id", user.getId())
-                .put("userName", user.getId())
+                .put("userName", user.getUsername())
                 .put("avatar", user.getAvatar())
                 .put("email", user.getEmail())
                 .map()
